@@ -13,7 +13,7 @@ function Postjob() {
     jobDescription: '',
   });
 
-  const backendURL = 'http://localhost:9000'; // Replace with your backend server URL
+  const backendURL = 'https://job-back-fp76.onrender.com'; // Replace with your backend server URL
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
