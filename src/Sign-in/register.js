@@ -98,7 +98,7 @@ function Register() {
   const [registrationSuccess, setRegistrationSuccess] = useState(false);
   const [registrationError, setRegistrationError] = useState(null);
 
-  const backendURL = 'http://localhost:9000/api/users'; // Replace with your backend server URL
+  const backendURL = 'https://job-back-fp76.onrender.com/api/users'; // Replace with your backend server URL
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();

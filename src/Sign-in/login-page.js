@@ -20,7 +20,7 @@ function LoginPage() {
 
     try {
       // Make a POST request to your backend API
-      const response = await axios.post('http://localhost:9000/auth/signin', formData);
+      const response = await axios.post('https://job-back-fp76.onrender.com/auth/signin', formData);
 
       console.log('User logged in:', response.data);
 
