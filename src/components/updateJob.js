@@ -20,7 +20,7 @@ function UpdateJob() {
     useEffect(() => {
       const fetchJob = async () => {
         try {
-          const response = await axios.get(`http://localhost:9000/${id}`);
+          const response = await axios.get(`https://job-back-fp76.onrender.com/${id}`);
           setJob(response.data);
         } catch (error) {
           console.error('Error fetching job for update:', error);
@@ -39,7 +39,7 @@ function UpdateJob() {
       e.preventDefault();
   
       try {
-        await axios.put(`http://localhost:9000/update/${id}`, job);
+        await axios.put(`https://job-back-fp76.onrender.com/update/${id}`, job);
         setUpdateMessage('Job updated successfully!');
       } catch (error) {
         console.error('Error updating job:', error);
