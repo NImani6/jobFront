@@ -15,7 +15,7 @@ function Jobs() {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const response = await axios.get('http://localhost:9000/');
+        const response = await axios.get('https://job-back-fp76.onrender.com/');
         setJobs(response.data);
       } catch (error) {
         console.error('Error fetching jobs:', error);
@@ -30,8 +30,8 @@ function Jobs() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:9000/api/delete/${id}`);
-      const response = await axios.get('http://localhost:9000/');
+      await axios.delete(`https://job-back-fp76.onrender.com/api/delete/${id}`);
+      const response = await axios.get('https://job-back-fp76.onrender.com/');
       setJobs(response.data);
     } catch (error) {
       console.error('Error deleting job:', error);
